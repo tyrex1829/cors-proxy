@@ -7,22 +7,21 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/jokes")
-      .then((res) => setJokes(res.data))
+      .get("/api/jokes")
+      .then((response) => setJokes(response.data))
       .catch((err) => console.log(err));
   });
 
   return (
     <>
-      <h1>Full stack Dev</h1>
-      <p>JOKES: {jokes.length}</p>
+      <h1>JOKES: {jokes.length}</h1>
 
-      {jokes.map((joke) => {
+      {jokes.map((joke) => (
         <div key={joke.id}>
           <h3>{joke.title}</h3>
           <p>{joke.content}</p>
-        </div>;
-      })}
+        </div>
+      ))}
     </>
   );
 }

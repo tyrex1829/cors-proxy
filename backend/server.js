@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   res.send("landing page");
 });
 
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
   const jokes = [
     {
       id: 1,
@@ -45,7 +45,7 @@ app.get("/jokes", (req, res) => {
     },
   ];
 
-  res.status(200).json({ jokes });
+  res.status(200).json(jokes);
 });
 
 app.listen(port, () => {
