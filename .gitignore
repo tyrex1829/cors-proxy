@@ -55,7 +55,6 @@ frontend/public/static/
 frontend/.turbo/
 
 # Ignore frontend lock files
-frontend/package-lock.json
 frontend/yarn.lock
 frontend/pnpm-lock.yaml
 
@@ -68,7 +67,6 @@ backend/.env.local
 backend/.env.*.local
 
 # Ignore backend lock files
-backend/package-lock.json
 backend/yarn.lock
 backend/pnpm-lock.yaml
 
