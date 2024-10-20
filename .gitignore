@@ -1,0 +1,83 @@
+# Global Ignored Files for Both Frontend and Backend
+
+# Node modules (for both frontend and backend)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore environment variables (for both frontend and backend)
+.env
+.env.local
+.env.*.local
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Ignore Docker-related files
+docker-compose.override.yml
+docker-compose.*.yml
+.dockerignore
+
+# Ignore compiled output
+*.o
+*.so
+*.exe
+*.dylib
+
+# Frontend-specific Ignored Files (Vite/React specific)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.cache/
+frontend/public/static/
+frontend/.turbo/
+
+# Ignore frontend lock files
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/pnpm-lock.yaml
+
+# Backend-specific Ignored Files (Node.js/Express specific)
+backend/node_modules/
+backend/build/
+backend/dist/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Ignore backend lock files
+backend/package-lock.json
+backend/yarn.lock
+backend/pnpm-lock.yaml
+
+# Ignore coverage reports (for both frontend and backend)
+coverage/
+frontend/coverage/
+backend/coverage/
+
+# Ignore temporary build files and output
+*.tmp
+*.temp
+*.log
